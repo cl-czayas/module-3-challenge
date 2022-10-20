@@ -33,16 +33,16 @@ function generatePassword() {
 
   var generatedPW=[]
     if (wantSpecial){
-      generatedPW=generatedPW+specials
+      generatedPW=generatedPW+specials.join("")
     }
     if (wantNumber){
-      generatedPW=generatedPW+numbers
+      generatedPW=generatedPW+numbers.join("")
     }
     if (wantLower){
-      generatedPW=generatedPW+lowers
+      generatedPW=generatedPW+lowers.join("")
     }
     if (wantUpper){
-      generatedPW=generatedPW+uppers
+      generatedPW=generatedPW+uppers.join("")
     }
 
     var finalPW="";
