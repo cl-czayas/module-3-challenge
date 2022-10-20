@@ -29,6 +29,19 @@ function generatePassword() {
         var wantUpper = confirm("Click OK to include uppercase characters in password.");
     } 
 
+  var generatedPW=[]
+    if (wantSpecial){
+      generatedPW=generatedPW+specials
+    }
+    if (wantNumber){
+      generatedPW=generatedPW+numbers
+    }
+    if (wantLower){
+      generatedPW=generatedPW+lowers
+    }
+    if (wantUpper){
+      generatedPW=generatedPW+uppers
+    }
 }
 // Write password to the #password input
 function writePassword() {
